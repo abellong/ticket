@@ -1,0 +1,11 @@
+<h1> 火车站列表 </h1>
+
+<ul class="stations">
+  <% @stations.each do |station| %>
+    <li>
+      <%= link_to station.name, station %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "新增站点", new_station_path %>

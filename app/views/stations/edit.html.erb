@@ -1,0 +1,15 @@
+<h1>编辑火车站节点</h1>
+<div class="row">
+  <div class="col-xs-4 col-md-offset-4">
+    <%= form_for(@station) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <%= f.label :name, "站点名称" %>
+      <%= f.text_field :name, class: "form-control" %>
+      <%= f.label :city, "城市" %>
+      <%= f.text_field :city, class: "form-control"  %>
+      <%= f.label :province, "省份" %>
+      <%= f.text_field :province, class: "form-control"  %>
+      <%= f.submit "新建", class: "btn btn-default btn-lg btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<p> 站名：<%= @station.name %> </p>
+<p> 所在城市：<%= @station.city %>  </p>
+<p> 所在省份：<%= @station.province %>  </p>
+<p> <%= link_to "编辑", edit_station_path(@station) %> </p>
+<%= link_to "删除", @station, method: :delete,
+                              data: { confirm: "确定删除？" },
+                              title: "ssss" %>
